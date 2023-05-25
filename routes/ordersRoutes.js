@@ -4,10 +4,9 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
-const validateBody_1 = __importDefault(require("middlewapres/validateBody"));
-//
-const ordersControllers_1 = __importDefault(require("controllers/ordersControllers"));
-const orderModel_1 = require("models/orderModel");
+const validateBody_1 = __importDefault(require("../middlewapres/validateBody"));
+const ordersControllers_1 = __importDefault(require("../controllers/ordersControllers"));
+const orderModel_1 = require("../models/orderModel");
 const routerOrder = express_1.default.Router();
 routerOrder.get("/", ordersControllers_1.default.getAll);
 routerOrder.get("/:orderId", ordersControllers_1.default.getOne);

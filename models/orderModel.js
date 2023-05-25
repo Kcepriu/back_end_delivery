@@ -4,9 +4,9 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.modelOrder = exports.shemas = void 0;
-const mongoose_1 = require("mongoose");
-const handleMongooseError_1 = __importDefault(require("helpers/handleMongooseError"));
 const joi_1 = __importDefault(require("joi"));
+const mongoose_1 = require("mongoose");
+const handleMongooseError_1 = __importDefault(require("../helpers/handleMongooseError"));
 const phoneRegExp = /^\+?\d{1,4}[-.\s]?\(?\d{1,3}\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}$/;
 const emailRegExp = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 const schemaGoodsDocument = new mongoose_1.Schema({

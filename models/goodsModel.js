@@ -5,7 +5,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.modelGoods = exports.shemas = void 0;
 const mongoose_1 = require("mongoose");
-const handleMongooseError_1 = __importDefault(require("helpers/handleMongooseError"));
+const handleMongooseError_1 = __importDefault(require("../helpers/handleMongooseError"));
 const joi_1 = __importDefault(require("joi"));
 const goodsSchema = new mongoose_1.Schema({
     name: {
