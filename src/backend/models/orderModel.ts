@@ -39,8 +39,7 @@ const schemaGoodsDocument = new Schema<IDocumentGoods>({
 const schemaOrders = new Schema<IOrder>(
   {
     name: {
-      type: String,
-      unique: true,
+      type: String,      
       required: [true, "DB: Name is required"],
     },
     shop: {
