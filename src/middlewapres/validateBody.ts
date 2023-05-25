@@ -1,4 +1,4 @@
-import requestError from "backend/helpers/requestError";
+import requestError from "helpers/requestError";
 import { ObjectSchema } from "joi";
 
 const validateBody = (schema: ObjectSchema) => {

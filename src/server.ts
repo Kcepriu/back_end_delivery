@@ -1,12 +1,12 @@
 import path from "path";
 import dotenv from "dotenv";
 
-const configPath = path.join(__dirname, "..", "config", ".env");
+const configPath = path.join(__dirname, ".", "config", ".env");
 
 dotenv.config({ path: configPath });
 // require("dotenv").config({ path: configPath });
 
-import connectDB from "../config/connectDB";
+import connectDB from "./config/connectDB";
 import app from "./app";
 
 const { PORT = 3000 } = process.env;

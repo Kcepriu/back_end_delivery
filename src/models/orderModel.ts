@@ -1,5 +1,5 @@
 import { model, Schema, Types, Document } from "mongoose";
-import handleMongooseError from "backend/helpers/handleMongooseError";
+import handleMongooseError from "helpers/handleMongooseError";
 import Joi from "joi";
 
 interface IDocumentGoods {
@@ -39,7 +39,7 @@ const schemaGoodsDocument = new Schema<IDocumentGoods>({
 const schemaOrders = new Schema<IOrder>(
   {
     name: {
-      type: String,      
+      type: String,
       required: [true, "DB: Name is required"],
     },
     shop: {

@@ -1,9 +1,9 @@
 import express from "express";
-import validateBody from "backend/middlewapres/validateBody";
+import validateBody from "middlewapres/validateBody";
 //
-import ctrl from "backend/controllers/ordersControllers";
+import ctrl from "controllers/ordersControllers";
 
-import { shemas } from "backend/models/orderModel";
+import { shemas } from "models/orderModel";
 
 const routerOrder = express.Router();
 

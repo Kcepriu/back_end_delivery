@@ -1,5 +1,5 @@
-import RequestError from "backend/helpers/requestError";
-import { modelOrder } from "backend/models/orderModel";
+import RequestError from "helpers/requestError";
+import { modelOrder } from "models/orderModel";
 import { isValidObjectId } from "mongoose";
 
 class OrdersServices {
