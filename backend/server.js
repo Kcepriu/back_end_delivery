@@ -4,8 +4,10 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const path_1 = __importDefault(require("path"));
+const dotenv_1 = __importDefault(require("dotenv"));
 const configPath = path_1.default.join(__dirname, "..", "config", ".env");
-require("dotenv").config({ path: configPath });
+dotenv_1.default.config({ path: configPath });
+// require("dotenv").config({ path: configPath });
 const connectDB_1 = __importDefault(require("../config/connectDB"));
 const app_1 = __importDefault(require("./app"));
 const { PORT = 3000 } = process.env;
