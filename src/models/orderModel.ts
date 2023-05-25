@@ -1,6 +1,6 @@
-import { model, Schema, Types, Document } from "mongoose";
-import handleMongooseError from "helpers/handleMongooseError";
 import Joi from "joi";
+import { model, Schema, Types, Document } from "mongoose";
+import handleMongooseError from "../helpers/handleMongooseError";
 
 interface IDocumentGoods {
   goods: Types.ObjectId;

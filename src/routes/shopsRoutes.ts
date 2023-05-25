@@ -1,7 +1,7 @@
 import express from "express";
-import ctrl from "controllers/shopsControllers";
-import validateBody from "middlewapres/validateBody";
-import { shemas } from "models/shopsModel";
+import ctrl from "../controllers/shopsControllers";
+import validateBody from "../middlewapres/validateBody";
+import { shemas } from "../models/shopsModel";
 
 const routerShops = express.Router();
 

@@ -1,6 +1,6 @@
-import RequestError from "helpers/requestError";
-import { modelShops } from "models/shopsModel";
 import { isValidObjectId } from "mongoose";
+import RequestError from "../helpers/requestError";
+import { modelShops } from "../models/shopsModel";
 
 class ShopsServices {
   // * show ALL

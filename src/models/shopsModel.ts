@@ -1,6 +1,6 @@
 import { model, Schema } from "mongoose";
 import { modelGoods } from "./goodsModel";
-import handleMongooseError from "helpers/handleMongooseError";
+import handleMongooseError from "../helpers/handleMongooseError";
 import Joi from "joi";
 
 interface IShop {

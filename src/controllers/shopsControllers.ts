@@ -1,5 +1,5 @@
 import expressAsyncHandler from "express-async-handler";
-import shopsServices from "services/shopsServices";
+import shopsServices from "../services/shopsServices";
 
 class ShopsController {
   getAll = expressAsyncHandler(async (_req, res: any) => {

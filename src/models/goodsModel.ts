@@ -1,5 +1,5 @@
 import { model, Schema, Types } from "mongoose";
-import handleMongooseError from "helpers/handleMongooseError";
+import handleMongooseError from "../helpers/handleMongooseError";
 import Joi from "joi";
 
 interface IGood {
