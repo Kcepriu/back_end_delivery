@@ -20,6 +20,10 @@ const schemaGoodsDocument = new mongoose_1.Schema({
         type: Number,
         default: 0,
     },
+    price: {
+        type: Number,
+        required: [true, "DB: price is required"],
+    },
 });
 const schemaOrders = new mongoose_1.Schema({
     name: {
@@ -69,6 +73,7 @@ const schemaAddOrder = joi_1.default.object({
         goods: joi_1.default.string().min(3).max(30).required(),
         count: joi_1.default.number().min(1).positive().required(),
         sum: joi_1.default.number().min(0).positive().required(),
+        price: joi_1.default.number().min(0.01).positive().required(),
     })),
 });
 exports.shemas = {
