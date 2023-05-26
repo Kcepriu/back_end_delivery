@@ -5,6 +5,7 @@ import cors from "cors";
 import routerShops from "./routes/shopsRoutes";
 import routerGoods from "./routes/goodsRoutes";
 import routerOrder from "./routes/ordersRoutes";
+import routerDev from "./routes/devRoutes";
 
 const app = express();
 const formatsLogger = app.get("env") === "development" ? "dev" : "short";
@@ -16,6 +17,7 @@ app.use(express.json());
 app.use("/api/shops", routerShops);
 app.use("/api/goods", routerGoods);
 app.use("/api/orders", routerOrder);
+app.use("/api/dev", routerDev);
 
 // * Not Found
 app.use("*", (_, res: Response) => {

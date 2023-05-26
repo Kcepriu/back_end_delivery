@@ -1,0 +1,125 @@
+[
+  {
+    "name": "FISSMAN",
+    "location": "50.44719662461964, 30.444287218073033",
+    "adress": "вулиця Борщагівська, 154а, Київ, 03056",
+    "goods": [
+      {
+        "name": "Ніж обвалювальний 250 мм 2900 жовтий Arcos",
+        "urlPicture": "https://forward-ua.com/storage/643/655/ba3/product-product-296510-nozh-arcos-16462-600x600.webp",
+        "price": 913
+      },
+      {
+        "name": "Ніж для обробки м’яса 150 мм червоний FoREST",
+        "urlPicture": "https://forward-ua.com/storage/613/716/de5/product-product-nozh-dlya-razdelki-myasa-150-mm-krasnyy-forest-4624-600x600.webp",
+        "price": 300
+      },
+      {
+        "name": "Ніж для обробки м’яса 150 мм жовтий FoREST",
+        "urlPicture": "https://forward-ua.com/storage/613/716/de5/product-product-nozh-dlya-razdelki-myasa-150-mm-zheltyy-forest-4623-600x600.webp",
+        "price": 284
+      },
+      {
+        "name": "Ніж для обробки м’яса 240 мм чорний FoREST",
+        "urlPicture": "https://forward-ua.com/storage/613/716/dea/product-product-nozh-dlya-razdelki-myasa-240-mm-chernyy-forest-4630-600x600.webp",
+        "price": 682
+      },
+      {
+        "name": "Ніж обвалювальний 140 мм чорний FoREST",
+        "urlPicture": "https://forward-ua.com/storage/613/716/ddc/product-product-nozh-obvalochnyy-140-mm-chernyy-forest-4614-600x600.webp",
+        "price": 319
+      },
+      {
+        "name": "Ніж для обробки м’яса 200 мм 2900 синій Arcos",
+        "urlPicture": "https://forward-ua.com/storage/611/3e1/fbc/product-product-nozh-dlya-razdelki-myasa-200-mm-2900-siniy-arcos-2-498-600x600.webp",
+        "price": 648
+      },
+      {
+        "name": "Ніж обвалювальний 140 мм 2900 жовтий Arcos",
+        "urlPicture": "https://forward-ua.com/storage/611/3e1/498/product-product-nozh-obvalochnyy-140-mm-2900-zheltyy-arcos-2-419-600x600.webp",
+        "price": 328
+      }
+    ]
+  },
+  {
+    "name": "Lora",
+    "location": "50.46413696485038, 30.40738002525963",
+    "adress": "вулиця Данила Щербаківського, 16, Київ, 03190",
+    "goods": [
+      {
+        "name": "Форма для піци d-28 см перфорована Lacor",
+        "urlPicture": "https://forward-ua.com/storage/611/3e5/9d3/product-product-forma-dlya-pitstsy-d-28-sm-perforirovannaya-lacor-906-600x600.webp",
+        "price": 480
+      },
+      {
+        "name": "Щітка для печі з ручкою 127 см Gi.Metal",
+        "urlPicture": "https://forward-ua.com/storage/611/3e6/837/product-product-shchetka-dlya-pechi-s-ruchkoy-127-sm-gimetal-1001-600x600.webp",
+        "price": 1700
+      },
+      {
+        "name": "Лопата для піци 182 см прямокутна з перфорацією Gi.Metal",
+        "urlPicture": "https://forward-ua.com/storage/611/3e6/884/product-product-lopata-dlya-pitstsy-182-sm-pryamougolnaya-s-perforatsiey-gimetal-1003-600x600.webp",
+        "price": 3280
+      },
+      {
+        "name": "Ложка розливна 27х7х2,5 см Gi.Metal",
+        "urlPicture": "https://forward-ua.com/storage/611/3e6/49c/product-product-lozhka-razlivnaya-27kh7kh25-sm-gimetal-977-600x600.webp",
+        "price": 903
+      }
+    ]
+  },
+  {
+    "name": "МОЯ Посуда",
+    "location": "50.46796136345946, 30.457676804934284",
+    "adress": "вулиця Сім'ї Хохлових, 11/2, Київ, 02000",
+    "goods": [
+      {
+        "name": "Келих для шампанського 240 мл, серія Cabernet Chef&Sommelier",
+        "urlPicture": "https://forward-ua.com/storage/611/e49/d98/product-product-bokal-dlya-shampanskogo-240-ml-seriya-cabernet-chefsommelier-3234-600x600.webp",
+        "price": 119
+      },
+      {
+        "name": "Келих для шампанського 185 мл, серія KOUROS Uniglass",
+        "urlPicture": "https://forward-ua.com/storage/611/e49/d3b/product-product-bokal-dlya-shampanskogo-185-ml-seriya-kouros-uniglass-3164-600x600.webp",
+        "price": 29
+      },
+      {
+        "name": "Келих для шампанського 140 мл, серія Palais Nachtmann",
+        "urlPicture": "https://forward-ua.com/storage/611/e49/d23/product-product-bokal-dlya-shampanskogo-140-ml-seriya-palais-nachtmann-3144-600x600.webp",
+        "price": 374
+      },
+      {
+        "name": "Келих для шампанського 140 мл, серія Longchamp Arcoroc",
+        "urlPicture": "https://forward-ua.com/storage/611/e49/e67/product-product-bokal-dlya-shampanskogo-140-ml-seriya-longchamp-arcoroc-3397-600x600.webp",
+        "price": 139
+      }
+    ]
+  },
+  {
+    "name": "Beridari",
+    "location": "50.42795378615677, 30.493039045490384",
+    "adress": "вулиця Волгоградська, 11, Київ, 02000",
+    "goods": [
+      {
+        "name": "Джигер 15/30/45 мл, сталь 18/10 The Bars",
+        "urlPicture": "https://forward-ua.com/storage/613/a05/0da/product-product-dzhigger-153045-ml-stal-1810-the-bars-7808-600x600.webp",
+        "price": 479
+      },
+      {
+        "name": "Джигер 20/40 мл FoREST",
+        "urlPicture": "https://forward-ua.com/storage/615/6ad/949/product-product-dzhigger-2040ml-forest-10062-600x600.webp",
+        "price": 120
+      },
+      {
+        "name": "Мензурка 500 мл Вітчизняні постачальники",
+        "urlPicture": "https://forward-ua.com/storage/613/a04/de4/product-product-10001505-menzurka-500-ml-otechestvennye-postavshchiki-6785-600x600.webp",
+        "price": 743
+      },
+      {
+        "name": "Джигер мідного кольору 25/50 мл APS",
+        "urlPicture": "https://forward-ua.com/storage/615/6ad/9c1/product-product-dzhiger-v-mednom-tsvete-2550-ml-aps-10203-600x600.webp",
+        "price": 693
+      }
+    ]
+  }
+]
