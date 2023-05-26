@@ -17,7 +17,7 @@ const goodsServices_1 = __importDefault(require("../services/goodsServices"));
 class GoodsController {
     constructor() {
         this.getAll = (0, express_async_handler_1.default)((req, res) => __awaiter(this, void 0, void 0, function* () {
-            const goods = yield goodsServices_1.default.show(Object.assign({}, req.body));
+            const goods = yield goodsServices_1.default.show(Object.assign({}, req.query));
             res.status(200).json({ code: 200, data: goods, qty: goods.length });
         }));
         this.add = (0, express_async_handler_1.default)((req, res) => __awaiter(this, void 0, void 0, function* () {

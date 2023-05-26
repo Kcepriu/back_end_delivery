@@ -19,8 +19,8 @@ const shopsModel_1 = require("../models/shopsModel");
 class GoodsServices {
     constructor() {
         // * show ALL
-        this.show = (data) => __awaiter(this, void 0, void 0, function* () {
-            const { shop } = data;
+        this.show = (params) => __awaiter(this, void 0, void 0, function* () {
+            const { shop } = params;
             let goods;
             if (shop) {
                 goods = yield goodsModel_1.modelGoods.find({ shop });
