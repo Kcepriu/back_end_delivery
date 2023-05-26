@@ -6,6 +6,7 @@ interface IDocumentGoods {
   goods: Types.ObjectId;
   count: number;
   sum: number;
+  price: number;
 }
 interface IOrder extends Document {
   name: string;
@@ -33,6 +34,10 @@ const schemaGoodsDocument = new Schema<IDocumentGoods>({
   sum: {
     type: Number,
     default: 0,
+  },
+  price: {
+    type: Number,
+    required: [true, "DB: price is required"],
   },
 });
 
@@ -94,6 +99,7 @@ const schemaAddOrder = Joi.object({
       goods: Joi.string().min(3).max(30).required(),
       count: Joi.number().min(1).positive().required(),
       sum: Joi.number().min(0).positive().required(),
+      price: Joi.number().min(0.01).positive().required(),
     })
   ),
 });
