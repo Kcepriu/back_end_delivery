@@ -5,8 +5,8 @@ import { modelShops } from "../models/shopsModel";
 
 class GoodsServices {
   // * show ALL
-  show = async (data: any) => {
-    const { shop } = data;
+  show = async (params: any) => {
+    const { shop } = params;
 
     let goods;
 

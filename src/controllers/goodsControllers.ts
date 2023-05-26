@@ -3,7 +3,7 @@ import goodsServices from "../services/goodsServices";
 
 class GoodsController {
   getAll = expressAsyncHandler(async (req: any, res: any) => {
-    const goods = await goodsServices.show({ ...req.body });
+    const goods = await goodsServices.show({ ...req.query });
 
     res.status(200).json({ code: 200, data: goods, qty: goods.length });
   });
