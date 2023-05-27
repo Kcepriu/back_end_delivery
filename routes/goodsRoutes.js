@@ -9,6 +9,7 @@ const goodsControllers_1 = __importDefault(require("../controllers/goodsControll
 const goodsModel_1 = require("../models/goodsModel");
 const routerGoods = express_1.default.Router();
 routerGoods.get("/", goodsControllers_1.default.getAll);
+routerGoods.get("/:goodId", goodsControllers_1.default.getOne);
 routerGoods.post("/", (0, validateBody_1.default)(goodsModel_1.shemas.schemaAddGood), goodsControllers_1.default.add);
 routerGoods.delete("/:goodId", goodsControllers_1.default.remove);
 exports.default = routerGoods;

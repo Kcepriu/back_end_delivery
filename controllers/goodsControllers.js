@@ -20,6 +20,11 @@ class GoodsController {
             const goods = yield goodsServices_1.default.show(Object.assign({}, req.query));
             res.status(200).json({ code: 200, data: goods, qty: goods.length });
         }));
+        this.getOne = (0, express_async_handler_1.default)((req, res) => __awaiter(this, void 0, void 0, function* () {
+            const { goodId } = req.params;
+            const goods = yield goodsServices_1.default.showOne(goodId);
+            res.status(200).json({ code: 200, data: goods });
+        }));
         this.add = (0, express_async_handler_1.default)((req, res) => __awaiter(this, void 0, void 0, function* () {
             const good = yield goodsServices_1.default.add(Object.assign({}, req.body));
             res.status(201).json({ code: 201, data: good });
