@@ -87,16 +87,16 @@ schemaOrders.post("save", handleMongooseError);
 
 // * Schema Add new shop Joi validation
 const schemaAddOrder = Joi.object({
-  name: Joi.string().min(3).max(30).required(),
-  shop: Joi.string().min(3).max(30).required(),
-  phone: Joi.string().min(3).max(30).pattern(phoneRegExp).required(),
-  email: Joi.string().min(3).max(30).pattern(emailRegExp).required(),
-  location: Joi.string().min(3).max(30).required(),
-  adress: Joi.string().min(3).max(30).required(),
+  name: Joi.string().min(3).max(100).required(),
+  shop: Joi.string().min(3).max(100).required(),
+  phone: Joi.string().min(3).max(100).pattern(phoneRegExp).required(),
+  email: Joi.string().min(3).max(100).pattern(emailRegExp).required(),
+  location: Joi.string().min(3).max(100).required(),
+  adress: Joi.string().min(3).max(300).required(),
   sum: Joi.number().min(0).positive().required(),
   goodsDocument: Joi.array().items(
     Joi.object({
-      goods: Joi.string().min(3).max(30).required(),
+      goods: Joi.string().min(3).max(100).required(),
       count: Joi.number().min(1).positive().required(),
       sum: Joi.number().min(0).positive().required(),
       price: Joi.number().min(0.01).positive().required(),
