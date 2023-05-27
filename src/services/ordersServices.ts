@@ -4,8 +4,21 @@ import { modelOrder } from "../models/orderModel";
 
 class OrdersServices {
   // * show ALL
-  show = async () => {
-    const orders = await modelOrder.find({});
+  show = async (params: any) => {
+    let filter = {};
+
+    if (params && params.phone) {
+      const regex = new RegExp(params.phone, "i");
+      filter = { phone: regex };
+    }
+    if (params && params.email) {
+      const regex = new RegExp(params.email, "i");
+      filter = { email: regex };
+    }
+
+    console.log("filter", filter);
+
+    const orders = await modelOrder.find(filter);
 
     if (!orders) {
       throw RequestError(400, "Unable to fetch Orders");

@@ -2,8 +2,8 @@ import expressAsyncHandler from "express-async-handler";
 import goodsServices from "../services/ordersServices";
 
 class OrdersController {
-  getAll = expressAsyncHandler(async (_req: any, res: any) => {
-    const orders = await goodsServices.show();
+  getAll = expressAsyncHandler(async (req: any, res: any) => {
+    const orders = await goodsServices.show({ ...req.query });
 
     res.status(200).json({ code: 200, data: orders, qty: orders.length });
   });
