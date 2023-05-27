@@ -62,15 +62,15 @@ const schemaOrders = new mongoose_1.Schema({
 schemaOrders.post("save", handleMongooseError_1.default);
 // * Schema Add new shop Joi validation
 const schemaAddOrder = joi_1.default.object({
-    name: joi_1.default.string().min(3).max(30).required(),
-    shop: joi_1.default.string().min(3).max(30).required(),
-    phone: joi_1.default.string().min(3).max(30).pattern(phoneRegExp).required(),
-    email: joi_1.default.string().min(3).max(30).pattern(emailRegExp).required(),
-    location: joi_1.default.string().min(3).max(30).required(),
-    adress: joi_1.default.string().min(3).max(30).required(),
+    name: joi_1.default.string().min(3).max(100).required(),
+    shop: joi_1.default.string().min(3).max(100).required(),
+    phone: joi_1.default.string().min(3).max(100).pattern(phoneRegExp).required(),
+    email: joi_1.default.string().min(3).max(100).pattern(emailRegExp).required(),
+    location: joi_1.default.string().min(3).max(100).required(),
+    adress: joi_1.default.string().min(3).max(300).required(),
     sum: joi_1.default.number().min(0).positive().required(),
     goodsDocument: joi_1.default.array().items(joi_1.default.object({
-        goods: joi_1.default.string().min(3).max(30).required(),
+        goods: joi_1.default.string().min(3).max(100).required(),
         count: joi_1.default.number().min(1).positive().required(),
         sum: joi_1.default.number().min(0).positive().required(),
         price: joi_1.default.number().min(0.01).positive().required(),
