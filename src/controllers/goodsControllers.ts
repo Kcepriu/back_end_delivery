@@ -8,6 +8,14 @@ class GoodsController {
     res.status(200).json({ code: 200, data: goods, qty: goods.length });
   });
 
+  getOne = expressAsyncHandler(async (req: any, res: any) => {
+    const { goodId } = req.params;
+
+    const goods = await goodsServices.showOne(goodId);
+
+    res.status(200).json({ code: 200, data: goods });
+  });
+
   add = expressAsyncHandler(async (req: any, res: any) => {
     const good = await goodsServices.add({ ...req.body });
 

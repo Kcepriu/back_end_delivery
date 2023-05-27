@@ -7,6 +7,7 @@ import { shemas } from "../models/goodsModel";
 const routerGoods = express.Router();
 
 routerGoods.get("/", ctrl.getAll);
+routerGoods.get("/:goodId", ctrl.getOne);
 routerGoods.post("/", validateBody(shemas.schemaAddGood), ctrl.add);
 routerGoods.delete("/:goodId", ctrl.remove);
 
