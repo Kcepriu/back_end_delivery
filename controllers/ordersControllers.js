@@ -16,8 +16,8 @@ const express_async_handler_1 = __importDefault(require("express-async-handler")
 const ordersServices_1 = __importDefault(require("../services/ordersServices"));
 class OrdersController {
     constructor() {
-        this.getAll = (0, express_async_handler_1.default)((_req, res) => __awaiter(this, void 0, void 0, function* () {
-            const orders = yield ordersServices_1.default.show();
+        this.getAll = (0, express_async_handler_1.default)((req, res) => __awaiter(this, void 0, void 0, function* () {
+            const orders = yield ordersServices_1.default.show(Object.assign({}, req.query));
             res.status(200).json({ code: 200, data: orders, qty: orders.length });
         }));
         this.getOne = (0, express_async_handler_1.default)((req, res) => __awaiter(this, void 0, void 0, function* () {

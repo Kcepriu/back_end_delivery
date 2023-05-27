@@ -18,8 +18,18 @@ const orderModel_1 = require("../models/orderModel");
 class OrdersServices {
     constructor() {
         // * show ALL
-        this.show = () => __awaiter(this, void 0, void 0, function* () {
-            const orders = yield orderModel_1.modelOrder.find({});
+        this.show = (params) => __awaiter(this, void 0, void 0, function* () {
+            let filter = {};
+            if (params && params.phone) {
+                const regex = new RegExp(params.phone, "i");
+                filter = { phone: regex };
+            }
+            if (params && params.email) {
+                const regex = new RegExp(params.email, "i");
+                filter = { email: regex };
+            }
+            console.log("filter", filter);
+            const orders = yield orderModel_1.modelOrder.find(filter);
             if (!orders) {
                 throw (0, requestError_1.default)(400, "Unable to fetch Orders");
             }
