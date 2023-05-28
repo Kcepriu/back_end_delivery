@@ -11,6 +11,7 @@ const shopsRoutes_1 = __importDefault(require("./routes/shopsRoutes"));
 const goodsRoutes_1 = __importDefault(require("./routes/goodsRoutes"));
 const ordersRoutes_1 = __importDefault(require("./routes/ordersRoutes"));
 const devRoutes_1 = __importDefault(require("./routes/devRoutes"));
+const mapRoutes_1 = __importDefault(require("./routes/mapRoutes"));
 const app = (0, express_1.default)();
 const formatsLogger = app.get("env") === "development" ? "dev" : "short";
 app.use((0, morgan_1.default)(formatsLogger));
@@ -20,6 +21,7 @@ app.use("/api/shops", shopsRoutes_1.default);
 app.use("/api/goods", goodsRoutes_1.default);
 app.use("/api/orders", ordersRoutes_1.default);
 app.use("/api/dev", devRoutes_1.default);
+app.use("/api/map", mapRoutes_1.default);
 // * Not Found
 app.use("*", (_, res) => {
     // (req: Request, res: Response)
