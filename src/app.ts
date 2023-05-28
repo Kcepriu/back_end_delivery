@@ -6,6 +6,7 @@ import routerShops from "./routes/shopsRoutes";
 import routerGoods from "./routes/goodsRoutes";
 import routerOrder from "./routes/ordersRoutes";
 import routerDev from "./routes/devRoutes";
+import routerMap from "./routes/mapRoutes";
 
 const app = express();
 const formatsLogger = app.get("env") === "development" ? "dev" : "short";
@@ -18,6 +19,7 @@ app.use("/api/shops", routerShops);
 app.use("/api/goods", routerGoods);
 app.use("/api/orders", routerOrder);
 app.use("/api/dev", routerDev);
+app.use("/api/map", routerMap);
 
 // * Not Found
 app.use("*", (_, res: Response) => {
