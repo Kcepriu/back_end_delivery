@@ -16,9 +16,9 @@ class OrdersServices {
       filter = { email: regex };
     }
 
-    console.log("filter", filter);
-
-    const orders = await modelOrder.find(filter);
+    const orders = await modelOrder
+      .find(filter)
+      .populate("goodsDocument.goods", "urlPicture price name shop");
 
     if (!orders) {
       throw RequestError(400, "Unable to fetch Orders");
@@ -33,7 +33,9 @@ class OrdersServices {
       throw RequestError(400, "Not valid ID");
     }
 
-    const order = await modelOrder.findById(id);
+    const order = await modelOrder
+      .findById(id)
+      .populate("goodsDocument.goods", "urlPicture price name shop");
 
     if (!order) {
       throw RequestError(400, "Unable to find Order");
