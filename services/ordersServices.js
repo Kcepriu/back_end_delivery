@@ -28,8 +28,9 @@ class OrdersServices {
                 const regex = new RegExp(params.email, "i");
                 filter = { email: regex };
             }
-            console.log("filter", filter);
-            const orders = yield orderModel_1.modelOrder.find(filter);
+            const orders = yield orderModel_1.modelOrder
+                .find(filter)
+                .populate("goodsDocument.goods", "urlPicture price name shop");
             if (!orders) {
                 throw (0, requestError_1.default)(400, "Unable to fetch Orders");
             }
@@ -40,7 +41,9 @@ class OrdersServices {
             if (!(0, mongoose_1.isValidObjectId)(id)) {
                 throw (0, requestError_1.default)(400, "Not valid ID");
             }
-            const order = yield orderModel_1.modelOrder.findById(id);
+            const order = yield orderModel_1.modelOrder
+                .findById(id)
+                .populate("goodsDocument.goods", "urlPicture price name shop");
             if (!order) {
                 throw (0, requestError_1.default)(400, "Unable to find Order");
             }
